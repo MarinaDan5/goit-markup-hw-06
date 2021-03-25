@@ -427,14 +427,15 @@
             </svg>
           </a>
         </li>
+       </ul>
         </div>
         <div class="footer-form-all">
           <p class="footer-form-title">Подпишитесь на рассылку</p>
           <form class="footer-form">
-            <input class="fotter-form-input" type="email" name="mail" id="mail" />
+            <input class="fotter-form-input" type="email" name="mail" id="mail" placeholder="E-mail" />
             <button class="footer-button-input" type="submit">Подписаться
               <svg class="footer-button-icon" width="24" height="24">
-                <use href="./images/sprite.svg#icon-icon-send">
+                <use href="./images/sprite.svg#icon-telegram">
                 </use>
               </svg>
             </button>
@@ -453,43 +454,49 @@
         </button>
             <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="form">
-              <div class="form-field">
-              <label class="form-label" for="name" >Имя</label>
-                 <input class="form-input" type="text" name="name" id="name"/>
-              <svg class="form-icon" width="12" height="12">
-                <use href="./images/sprite.svg#icon-name">
-                </use>
-              </svg>
-              </div>
-
-              <div class="form-field">
-              <label class="form-label" for="tel">Телефон</label>
-              <input class="form-input" type="tel" name="tel" id="tel"/>
-              </div>
-
-              <div class="form-field">
-              <label class="form-label" for="mail">Почта</label>
-              <input class="form-input" type="email" name="mail" id="mail"/>
-              </div>
-
-              <div class="form-field">
-              <label class="form-label" for="comments">Комментарий</label>
-              <textarea class="title-area" name="comments" id="comments"  placeholder="Введите текст" ></textarea>
-              </div>
-
-            <div class="form-field">
-             <input class="form-input" type="checkbox" name="policy" id="policy"/>
-             <label class="form-label-agree" for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-            </div>
-              
-              
-              <button class="buttom-input" type="submit">Отправить
-                
-              </button>
-            </form>
             
+              <label class="form-field">
+                Имя
+                <span class="modal-form-imput-button">
+                <input class="form-input" type="text" name="name" required minlength="2" />
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-person-form">
+                  </use>
+                </svg>
+                </span>
+              </label>
+              
+              <label class="form-field">Телефон
+                <span class="modal-form-imput-button">
+                <input class="form-input" type="tel" name="tel" required/>
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-phone-form">
+                  </use>
+                </svg>
+                </span>
+              </label>
+
+              <label class="form-field">Почта
+                <span class="modal-form-imput-button">
+                <input class="form-input" type="email" name="mail"/>
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-email-form">
+                  </use>
+                </svg>
+                </span>
+              </label>
+
+              <label class="form-field" for="user-message">Комментарий
+                <textarea class="title-area" name="user-message" id="user-message" placeholder="Введите текст"></textarea>
+              </label>
+            
+              <div class="checkbox">
+             <input class="form-input-checkbox visually-hidden" type="checkbox" name="user-term" id="user-term" />
+             <label class="form-label-agree" for="user-term">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="form-link">Условия договора</a></label>
+              </div>
+              <button class="buttom-input" type="submit">Отправить</button>
+            </form>
       </div>
-      
     </div>
 
     <script src="./js/modal.js"></script>
